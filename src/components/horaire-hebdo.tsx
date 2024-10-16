@@ -24,6 +24,9 @@ import { Trash2 } from 'lucide-react';
 import IEntree from '@/models/ientree';
 
 import collegeCalendarData from '@/data/collegeCalendarData.json';
+import { genererCalendrier } from '@/tools/calendar';
+import * as ics from 'ics';
+import { saveAs } from 'file-saver';
 
 export function HoraireHebdoComponent() {
   const [nomCours, setNomCours] = useState('');
@@ -89,8 +92,19 @@ export function HoraireHebdoComponent() {
   };
 
   const gereGenererCalendrier = () => {
-    // In a real application, this would generate and download an .ics file
-    alert('Calendar file generation would happen here!');
+    const calendrier = genererCalendrier(
+      horaire,
+      collegeCalendarData[0].calendrier
+    );
+
+    const { error, value } = ics.createEvents(calendrier);
+    if (error) {
+      console.log(error);
+      return;
+    }
+
+    const blob = new Blob([value!], { type: 'text/calendar' });
+    saveAs(blob, `horaire.ics`);
   };
 
   return (
