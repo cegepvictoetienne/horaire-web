@@ -1,0 +1,582 @@
+[
+  {
+    "session": "Automne 2024",
+    "calendrier": [
+      {
+        "Date": "2024-08-21",
+        "Jour de la semaine": "Mercredi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-08-22",
+        "Jour de la semaine": "Jeudi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-08-23",
+        "Jour de la semaine": "Vendredi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-08-24",
+        "Jour de la semaine": "Samedi",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-08-25",
+        "Jour de la semaine": "Dimanche",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-08-26",
+        "Jour de la semaine": "Lundi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-08-27",
+        "Jour de la semaine": "Mardi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-08-28",
+        "Jour de la semaine": "Mercredi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-08-29",
+        "Jour de la semaine": "Jeudi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-08-30",
+        "Jour de la semaine": "Vendredi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-08-31",
+        "Jour de la semaine": "Samedi",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-09-01",
+        "Jour de la semaine": "Dimanche",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-09-02",
+        "Jour de la semaine": "Lundi",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-09-03",
+        "Jour de la semaine": "Mardi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-09-04",
+        "Jour de la semaine": "Mercredi",
+        "Statut": "AM"
+      },
+      {
+        "Date": "2024-09-05",
+        "Jour de la semaine": "Lundi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-09-06",
+        "Jour de la semaine": "Vendredi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-09-07",
+        "Jour de la semaine": "Samedi",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-09-08",
+        "Jour de la semaine": "Dimanche",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-09-09",
+        "Jour de la semaine": "Lundi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-09-10",
+        "Jour de la semaine": "Mardi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-09-11",
+        "Jour de la semaine": "Mercredi",
+        "Statut": "PM"
+      },
+      {
+        "Date": "2024-09-12",
+        "Jour de la semaine": "Jeudi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-09-13",
+        "Jour de la semaine": "Vendredi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-09-14",
+        "Jour de la semaine": "Samedi",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-09-15",
+        "Jour de la semaine": "Dimanche",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-09-16",
+        "Jour de la semaine": "Lundi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-09-17",
+        "Jour de la semaine": "Mardi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-09-18",
+        "Jour de la semaine": "Mercredi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-09-19",
+        "Jour de la semaine": "Jeudi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-09-20",
+        "Jour de la semaine": "Vendredi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-09-21",
+        "Jour de la semaine": "Samedi",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-09-22",
+        "Jour de la semaine": "Dimanche",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-09-23",
+        "Jour de la semaine": "Lundi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-09-24",
+        "Jour de la semaine": "Mardi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-09-25",
+        "Jour de la semaine": "Mercredi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-09-26",
+        "Jour de la semaine": "Jeudi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-09-27",
+        "Jour de la semaine": "Vendredi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-09-28",
+        "Jour de la semaine": "Samedi",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-09-29",
+        "Jour de la semaine": "Dimanche",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-09-30",
+        "Jour de la semaine": "Lundi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-10-01",
+        "Jour de la semaine": "Mardi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-10-02",
+        "Jour de la semaine": "Mercredi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-10-03",
+        "Jour de la semaine": "Jeudi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-10-04",
+        "Jour de la semaine": "Vendredi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-10-05",
+        "Jour de la semaine": "Samedi",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-10-06",
+        "Jour de la semaine": "Dimanche",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-10-07",
+        "Jour de la semaine": "Lundi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-10-08",
+        "Jour de la semaine": "Mardi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-10-09",
+        "Jour de la semaine": "Mercredi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-10-10",
+        "Jour de la semaine": "Jeudi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-10-11",
+        "Jour de la semaine": "Vendredi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-10-12",
+        "Jour de la semaine": "Samedi",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-10-13",
+        "Jour de la semaine": "Dimanche",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-10-14",
+        "Jour de la semaine": "Lundi",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-10-15",
+        "Jour de la semaine": "Mardi",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-10-16",
+        "Jour de la semaine": "Mercredi",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-10-17",
+        "Jour de la semaine": "Jeudi",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-10-18",
+        "Jour de la semaine": "Vendredi",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-10-19",
+        "Jour de la semaine": "Samedi",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-10-20",
+        "Jour de la semaine": "Dimanche",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-10-21",
+        "Jour de la semaine": "Lundi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-10-22",
+        "Jour de la semaine": "Mardi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-10-23",
+        "Jour de la semaine": "Mercredi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-10-24",
+        "Jour de la semaine": "Jeudi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-10-25",
+        "Jour de la semaine": "Vendredi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-10-26",
+        "Jour de la semaine": "Samedi",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-10-27",
+        "Jour de la semaine": "Dimanche",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-10-28",
+        "Jour de la semaine": "Lundi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-10-29",
+        "Jour de la semaine": "Mardi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-10-30",
+        "Jour de la semaine": "Mercredi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-10-31",
+        "Jour de la semaine": "Jeudi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-11-01",
+        "Jour de la semaine": "Vendredi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-11-02",
+        "Jour de la semaine": "Samedi",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-11-03",
+        "Jour de la semaine": "Dimanche",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-11-04",
+        "Jour de la semaine": "Lundi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-11-05",
+        "Jour de la semaine": "Mardi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-11-06",
+        "Jour de la semaine": "Mercredi",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-11-07",
+        "Jour de la semaine": "Jeudi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-11-08",
+        "Jour de la semaine": "Mercredi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-11-09",
+        "Jour de la semaine": "Samedi",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-11-10",
+        "Jour de la semaine": "Dimanche",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-11-11",
+        "Jour de la semaine": "Lundi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-11-12",
+        "Jour de la semaine": "Mardi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-11-13",
+        "Jour de la semaine": "Mercredi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-11-14",
+        "Jour de la semaine": "Jeudi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-11-15",
+        "Jour de la semaine": "Vendredi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-11-16",
+        "Jour de la semaine": "Samedi",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-11-17",
+        "Jour de la semaine": "Dimanche",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-11-18",
+        "Jour de la semaine": "Lundi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-11-19",
+        "Jour de la semaine": "Mardi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-11-20",
+        "Jour de la semaine": "Mercredi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-11-21",
+        "Jour de la semaine": "Jeudi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-11-22",
+        "Jour de la semaine": "Vendredi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-11-23",
+        "Jour de la semaine": "Samedi",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-11-24",
+        "Jour de la semaine": "Dimanche",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-11-25",
+        "Jour de la semaine": "Lundi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-11-26",
+        "Jour de la semaine": "Mardi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-11-27",
+        "Jour de la semaine": "Mercredi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-11-28",
+        "Jour de la semaine": "Jeudi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-11-29",
+        "Jour de la semaine": "Vendredi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-11-30",
+        "Jour de la semaine": "Samedi",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-12-01",
+        "Jour de la semaine": "Dimanche",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-12-02",
+        "Jour de la semaine": "Lundi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-12-03",
+        "Jour de la semaine": "Mardi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-12-04",
+        "Jour de la semaine": "Mercredi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-12-05",
+        "Jour de la semaine": "Jeudi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-12-06",
+        "Jour de la semaine": "Vendredi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-12-07",
+        "Jour de la semaine": "Samedi",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-12-08",
+        "Jour de la semaine": "Dimanche",
+        "Statut": "CONGÉ"
+      },
+      {
+        "Date": "2024-12-09",
+        "Jour de la semaine": "Lundi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-12-10",
+        "Jour de la semaine": "Mardi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-12-11",
+        "Jour de la semaine": "Mercredi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-12-12",
+        "Jour de la semaine": "Jeudi",
+        "Statut": "COMPLET"
+      },
+      {
+        "Date": "2024-12-13",
+        "Jour de la semaine": "Vendredi",
+        "Statut": "COMPLET"
+      }
+    ]
+  }
+]
