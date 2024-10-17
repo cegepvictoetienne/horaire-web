@@ -4,7 +4,8 @@ import IJourCalendrier from '@/models/ijourcalendrier';
 
 export function genererCalendrier(
   entrees: IEntree[],
-  joursCalendrier: IJourCalendrier[]
+  joursCalendrier: IJourCalendrier[],
+  ajouterSemaine: boolean
 ): IEntreeCalendrier[] {
   const calendrier: IEntreeCalendrier[] = [];
 
@@ -33,9 +34,12 @@ export function genererCalendrier(
         console.log(tableauDebut);
         const dureeHeure = heureFinSansMinutes - heureDebutSansMinutes - 1;
         const dureeMinutes = 50;
-
+        let nomCoursComplet = entree.nomCours;
+        if (ajouterSemaine) {
+          nomCoursComplet = `${entree.nomCours} - Sem. ${jour.numeroSemaine}`;
+        }
         calendrier.push({
-          title: entree.nomCours,
+          title: nomCoursComplet,
           location: entree.salle,
           start: tableauDebut,
           duration: { hours: dureeHeure, minutes: dureeMinutes },

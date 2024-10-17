@@ -41,6 +41,7 @@ export function HoraireHebdoComponent() {
   const [jour, setJour] = useState('');
   const [horaire, setHoraire] = useState<IEntree[]>([]);
   const [session, setSession] = useState('');
+  const [ajouterSemaine, setAjouterSemaine] = useState(false);
   const [genererDisabled, setGenererDisabled] = useState(true);
   const [erreurs, setErreurs] = useState({
     nomCours: '',
@@ -171,7 +172,11 @@ export function HoraireHebdoComponent() {
     )[0];
 
     // Générer le calendrier en prenant l'horaire hebdo et le calendrier scolaire pour la session sélectionnée
-    const calendrier = genererCalendrier(horaire, calendrierData.calendrier);
+    const calendrier = genererCalendrier(
+      horaire,
+      calendrierData.calendrier,
+      ajouterSemaine
+    );
 
     console.log(calendrier);
     // Créer le fichier de calendrier
@@ -337,21 +342,33 @@ export function HoraireHebdoComponent() {
         </div>
       )}
 
-      <div>
-        <Label htmlFor="session">Session</Label>
-        <Select value={session} onValueChange={setSession} required>
-          <SelectTrigger id="session">
-            <SelectValue placeholder="Choisir la session" />
-          </SelectTrigger>
-          <SelectContent>
-            {listeCalendriers.map((nomSession) => (
-              <SelectItem key={nomSession} value={nomSession}>
-                {nomSession}
-              </SelectItem>
-            ))}
-          </SelectContent>
-        </Select>
+      <div className="grid grid-cols-2 gap-4">
+        <div>
+          <Label htmlFor="session">Session</Label>
+          <Select value={session} onValueChange={setSession} required>
+            <SelectTrigger id="session">
+              <SelectValue placeholder="Choisir la session" />
+            </SelectTrigger>
+            <SelectContent>
+              {listeCalendriers.map((nomSession) => (
+                <SelectItem key={nomSession} value={nomSession}>
+                  {nomSession}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+        </div>
+        <div>
+          <Label htmlFor="ajouterSemaine">Ajouter le numéro de semaine?</Label>
+          <Input
+            id="ajouterSemaine"
+            checked={ajouterSemaine}
+            onChange={(e) => setAjouterSemaine(e.target.checked)}
+            type="checkbox"
+          />
+        </div>
       </div>
+
       <Button
         onClick={gereGenererCalendrier}
         className="w-full"
