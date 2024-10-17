@@ -1,6 +1,11 @@
+/**
+ * Générateur de calendrier selon le calendrier scolaire
+ * Composante principale pour la création d'un horaire hebdomadaire.
+ */
+
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -36,17 +41,37 @@ export function HoraireHebdoComponent() {
   const [jour, setJour] = useState('');
   const [horaire, setHoraire] = useState<IEntree[]>([]);
   const [session, setSession] = useState('');
+  const [genererDisabled, setGenererDisabled] = useState(true);
+  const [erreurs, setErreurs] = useState({
+    nomCours: '',
+    salle: '',
+    heureDebut: '',
+    heureFin: '',
+    jour: '',
+  });
 
+  // Activer le bouton seulement si une session et des entrées sont présentes
+  useEffect(() => {
+    if (session && horaire.length > 0) {
+      setGenererDisabled(false);
+    } else {
+      setGenererDisabled(true);
+    }
+  }, [session, horaire]);
+
+  // Générer les heures début à la minute 15 de chaque heure
   const listeHeureDebut = Array.from({ length: 24 }, (_, i) => {
     const heure = i.toString().padStart(2, '0');
     return `${heure}:15`;
   });
 
+  // Générer les heures fin à la minute 05 de chaque heure
   const listeHeureFin = Array.from({ length: 24 }, (_, i) => {
     const heure = i.toString().padStart(2, '0');
     return `${heure}:05`;
   });
 
+  // Extraire les sessions du calendrier scolaire
   const listeCalendriers = collegeCalendarData.map(
     (calendrier) => calendrier.session
   );
@@ -61,8 +86,56 @@ export function HoraireHebdoComponent() {
     'Dimanche',
   ];
 
+  const validerFormulaire = () => {
+    let estValide = true;
+    const nouvellesErreurs = {
+      nomCours: '',
+      salle: '',
+      heureDebut: '',
+      heureFin: '',
+      jour: '',
+    };
+
+    if (!nomCours.trim()) {
+      nouvellesErreurs.nomCours = 'Le nom du cours est obligatoire';
+      estValide = false;
+    }
+
+    if (!salle.trim()) {
+      nouvellesErreurs.salle = 'Le nom de la salle est obligatoire';
+      estValide = false;
+    }
+
+    if (!jour) {
+      nouvellesErreurs.jour = 'Le jour de la semaine est obligatoire';
+      estValide = false;
+    }
+
+    if (!heureDebut) {
+      nouvellesErreurs.heureDebut = "L'heure de début est obligatoire";
+      estValide = false;
+    }
+
+    if (!heureFin) {
+      nouvellesErreurs.heureFin = "L'heure de fin est obligatoire";
+      estValide = false;
+    }
+
+    if (heureDebut && heureFin && heureDebut >= heureFin) {
+      nouvellesErreurs.heureFin =
+        "L'heure de fin doit être après l'heure de début";
+      estValide = false;
+    }
+
+    setErreurs(nouvellesErreurs);
+    return estValide;
+  };
+
   const gereAjoutEntree = (e: { preventDefault: () => void }) => {
     e.preventDefault();
+    if (!validerFormulaire()) {
+      return;
+    }
     if (nomCours && salle && heureDebut && heureFin && jour) {
       setHoraire([
         ...horaire,
@@ -92,17 +165,23 @@ export function HoraireHebdoComponent() {
   };
 
   const gereGenererCalendrier = () => {
-    const calendrier = genererCalendrier(
-      horaire,
-      collegeCalendarData[0].calendrier
-    );
+    // Extraire le calendrier pour la session sélectionnée
+    const calendrierData = collegeCalendarData.filter(
+      (calendrier) => calendrier.session === session
+    )[0];
 
+    // Générer le calendrier en prenant l'horaire hebdo et le calendrier scolaire pour la session sélectionnée
+    const calendrier = genererCalendrier(horaire, calendrierData.calendrier);
+
+    console.log(calendrier);
+    // Créer le fichier de calendrier
     const { error, value } = ics.createEvents(calendrier);
     if (error) {
       console.log(error);
       return;
     }
 
+    // Enregistrer le fichier et le télécharger
     const blob = new Blob([value!], { type: 'text/calendar' });
     saveAs(blob, `horaire.ics`);
   };
@@ -121,7 +200,11 @@ export function HoraireHebdoComponent() {
             value={nomCours}
             onChange={(e) => setNomCours(e.target.value)}
             required
+            className={erreurs.nomCours ? 'border-red-500' : ''}
           />
+          {erreurs.nomCours && (
+            <p className="text-red-500 text-sm mt-1">{erreurs.nomCours}</p>
+          )}
         </div>
 
         <div className="grid grid-cols-2 gap-4">
@@ -132,12 +215,19 @@ export function HoraireHebdoComponent() {
               value={salle}
               onChange={(e) => setSalle(e.target.value)}
               required
+              className={erreurs.salle ? 'border-red-500' : ''}
             />
+            {erreurs.salle && (
+              <p className="text-red-500 text-sm mt-1">{erreurs.salle}</p>
+            )}
           </div>
           <div>
             <Label htmlFor="jourDeSemaine">Jour</Label>
             <Select value={jour} onValueChange={setJour} required>
-              <SelectTrigger id="jourDeSemaine">
+              <SelectTrigger
+                id="jourDeSemaine"
+                className={erreurs.jour ? 'border-red-500' : ''}
+              >
                 <SelectValue placeholder="Choisir le jour de la semaine" />
               </SelectTrigger>
               <SelectContent>
@@ -148,6 +238,9 @@ export function HoraireHebdoComponent() {
                 ))}
               </SelectContent>
             </Select>
+            {erreurs.jour && (
+              <p className="text-red-500 text-sm mt-1">{erreurs.jour}</p>
+            )}
           </div>
         </div>
 
@@ -155,7 +248,10 @@ export function HoraireHebdoComponent() {
           <div>
             <Label htmlFor="heureDebut">Heure début</Label>
             <Select value={heureDebut} onValueChange={setHeureDebut} required>
-              <SelectTrigger id="heureDebut">
+              <SelectTrigger
+                id="heureDebut"
+                className={erreurs.heureDebut ? 'border-red-500' : ''}
+              >
                 <SelectValue placeholder="Choisir l'heure de début" />
               </SelectTrigger>
               <SelectContent>
@@ -166,12 +262,18 @@ export function HoraireHebdoComponent() {
                 ))}
               </SelectContent>
             </Select>
+            {erreurs.heureDebut && (
+              <p className="text-red-500 text-sm mt-1">{erreurs.heureDebut}</p>
+            )}
           </div>
 
           <div>
             <Label htmlFor="heureFin">Heure de fin</Label>
             <Select value={heureFin} onValueChange={setHeureFin} required>
-              <SelectTrigger id="heureFin">
+              <SelectTrigger
+                id="heureFin"
+                className={erreurs.heureFin ? 'border-red-500' : ''}
+              >
                 <SelectValue placeholder="Choisir heure de fin" />
               </SelectTrigger>
               <SelectContent>
@@ -182,6 +284,9 @@ export function HoraireHebdoComponent() {
                 ))}
               </SelectContent>
             </Select>
+            {erreurs.heureFin && (
+              <p className="text-red-500 text-sm mt-1">{erreurs.heureFin}</p>
+            )}
           </div>
         </div>
 
@@ -247,7 +352,11 @@ export function HoraireHebdoComponent() {
           </SelectContent>
         </Select>
       </div>
-      <Button onClick={gereGenererCalendrier} className="w-full">
+      <Button
+        onClick={gereGenererCalendrier}
+        className="w-full"
+        disabled={genererDisabled}
+      >
         Générer le ficher de calendrier
       </Button>
     </div>

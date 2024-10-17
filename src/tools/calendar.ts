@@ -10,6 +10,7 @@ export function genererCalendrier(
 
   joursCalendrier.forEach((jour) => {
     const jourDate = new Date(jour.date);
+    jourDate.setHours(jourDate.getHours() + 5); // 5 heures de décalage
     entrees.forEach((entree) => {
       const heureDebutSansMinutes = Number(entree.heureDebut.split(':')[0]);
       const heureDebutSeulementMinutes = Number(
@@ -29,6 +30,7 @@ export function genererCalendrier(
           heureDebutSansMinutes,
           heureDebutSeulementMinutes,
         ];
+        console.log(tableauDebut);
         const dureeHeure = heureFinSansMinutes - heureDebutSansMinutes - 1;
         const dureeMinutes = 50;
 
@@ -38,6 +40,7 @@ export function genererCalendrier(
           start: tableauDebut,
           duration: { hours: dureeHeure, minutes: dureeMinutes },
           busyStatus: 'BUSY',
+          startOutputType: 'local',
         });
       }
     });
