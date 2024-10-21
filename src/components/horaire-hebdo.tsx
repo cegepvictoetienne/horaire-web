@@ -223,18 +223,25 @@ export function HoraireHebdoComponent() {
       ajouterSemaine
     );
 
-    const calendrierAvecStart = calendrier.map((entry) => ({
-      ...entry,
-      start: new Date(
+    const calendrierAvecStartEtEnd = calendrier.map((entry) => {
+      const startDate = new Date(
         entry.start[0],
         entry.start[1] - 1,
         entry.start[2],
         entry.start[3],
         entry.start[4]
-      ).toLocaleString(),
-    }));
+      );
+      const endDate = new Date(startDate);
+      endDate.setHours(endDate.getHours() + entry.duration.hours);
+      endDate.setMinutes(endDate.getMinutes() + entry.duration.minutes);
+      return {
+        ...entry,
+        start: startDate.toLocaleString(),
+        end: endDate.toLocaleString(),
+      };
+    });
 
-    const ws = XLSX.utils.json_to_sheet(calendrierAvecStart);
+    const ws = XLSX.utils.json_to_sheet(calendrierAvecStartEtEnd);
     const wb = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(wb, ws, 'Horaire');
     const excelBuffer = XLSX.write(wb, { bookType: 'xlsx', type: 'array' });
