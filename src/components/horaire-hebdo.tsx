@@ -223,7 +223,18 @@ export function HoraireHebdoComponent() {
       ajouterSemaine
     );
 
-    const ws = XLSX.utils.json_to_sheet(calendrier);
+    const calendrierAvecDateDebut = calendrier.map((entry) => ({
+      ...entry,
+      dateDebut: new Date(
+        entry.start[0],
+        entry.start[1] - 1,
+        entry.start[2],
+        entry.start[3],
+        entry.start[4]
+      ).toLocaleString(),
+    }));
+
+    const ws = XLSX.utils.json_to_sheet(calendrierAvecDateDebut);
     const wb = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(wb, ws, 'Horaire');
     const excelBuffer = XLSX.write(wb, { bookType: 'xlsx', type: 'array' });
