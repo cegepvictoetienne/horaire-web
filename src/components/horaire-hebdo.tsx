@@ -50,6 +50,7 @@ import collegeCalendarData from '@/data/collegeCalendarData.json';
 import { genererCalendrier } from '@/tools/calendar';
 import * as ics from 'ics';
 import { saveAs } from 'file-saver';
+import * as XLSX from 'xlsx';
 
 export function HoraireHebdoComponent() {
   const [nomCours, setNomCours] = useState('');
@@ -207,6 +208,45 @@ export function HoraireHebdoComponent() {
     // Enregistrer le fichier et le télécharger
     const blob = new Blob([value!], { type: 'text/calendar' });
     saveAs(blob, `horaire.ics`);
+  };
+
+  const genererExcel = () => {
+    // Extraire le calendrier pour la session sélectionnée
+    const calendrierData = collegeCalendarData.filter(
+      (calendrier) => calendrier.session === session
+    )[0];
+
+    // Générer le calendrier en prenant l'horaire hebdo et le calendrier scolaire pour la session sélectionnée
+    const calendrier = genererCalendrier(
+      horaire,
+      calendrierData.calendrier,
+      ajouterSemaine
+    );
+
+    const calendrierAvecStartEtEnd = calendrier.map((entry) => {
+      const startDate = new Date(
+        entry.start[0],
+        entry.start[1] - 1,
+        entry.start[2],
+        entry.start[3],
+        entry.start[4]
+      );
+      const endDate = new Date(startDate);
+      endDate.setHours(endDate.getHours() + entry.duration.hours);
+      endDate.setMinutes(endDate.getMinutes() + entry.duration.minutes);
+      return {
+        ...entry,
+        start: startDate.toLocaleString(),
+        end: endDate.toLocaleString(),
+      };
+    });
+
+    const ws = XLSX.utils.json_to_sheet(calendrierAvecStartEtEnd);
+    const wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, 'Horaire');
+    const excelBuffer = XLSX.write(wb, { bookType: 'xlsx', type: 'array' });
+    const blob = new Blob([excelBuffer], { type: 'application/octet-stream' });
+    saveAs(blob, 'horaire.xlsx');
   };
 
   return (
@@ -393,6 +433,13 @@ export function HoraireHebdoComponent() {
         disabled={genererDisabled}
       >
         Générer le ficher de calendrier
+      </Button>
+      <Button
+        onClick={genererExcel}
+        className="w-full mt-4"
+        disabled={genererDisabled}
+      >
+        Générer le fichier Excel
       </Button>
     </div>
   );
