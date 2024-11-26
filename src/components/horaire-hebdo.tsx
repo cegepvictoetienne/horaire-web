@@ -404,6 +404,7 @@ export function HoraireHebdoComponent() {
           <TableHeader>
             <TableRow>
               <TableHead>Nom du cours</TableHead>
+              <TableHead>Groupe</TableHead>
               <TableHead>Salle</TableHead>
               <TableHead>Jour</TableHead>
               <TableHead>Heure de début</TableHead>
@@ -420,6 +421,14 @@ export function HoraireHebdoComponent() {
                     animate={{ opacity: 1, scale: 1 }}
                   >
                     {entry.nomCours}
+                  </motion.div>
+                </TableCell>
+                <TableCell>
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                  >
+                    {entry.groupe}
                   </motion.div>
                 </TableCell>
                 <TableCell>
