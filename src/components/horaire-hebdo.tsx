@@ -42,7 +42,18 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
+
 import { Trash2 } from 'lucide-react';
+import { ArrowDown } from 'lucide-react';
+import { motion } from 'motion/react';
 
 import IEntree from '@/models/ientree';
 
@@ -78,6 +89,15 @@ export function HoraireHebdoComponent() {
       setGenererDisabled(true);
     }
   }, [session, horaire]);
+
+  // Choisir heure de fin = heure de début + 2h par défaut
+  useEffect(() => {
+    if (heureDebut && !heureFin) {
+      const [heure] = heureDebut.split(':').map(Number);
+      const heureFin = (heure + 2).toString().padStart(2, '0');
+      setHeureFin(`${heureFin}:05`);
+    }
+  }, [heureDebut]);
 
   // Générer les heures début à la minute 15 de chaque heure
   const listeHeureDebut = Array.from({ length: 24 }, (_, i) => {
@@ -197,7 +217,6 @@ export function HoraireHebdoComponent() {
       ajouterSemaine
     );
 
-    console.log(calendrier);
     // Créer le fichier de calendrier
     const { error, value } = ics.createEvents(calendrier);
     if (error) {
@@ -252,7 +271,7 @@ export function HoraireHebdoComponent() {
   return (
     <div className="container mx-auto p-4 max-w-4xl">
       <h1 className="text-2xl font-bold mb-4">
-        Générateur de calendrier selon le calendrier scolaire
+        Générateur de rendez-vous Outlook selon le calendrier scolaire
       </h1>
 
       <form onSubmit={gereAjoutEntree} className="space-y-4 mb-6">
@@ -356,34 +375,72 @@ export function HoraireHebdoComponent() {
         <Button type="submit">Ajout à l'horaire</Button>
       </form>
 
-      {horaire.length > 0 && (
-        <div className="mb-6">
-          <div className="flex justify-between items-center mb-2">
-            <h2 className="text-xl font-semibold">Horaire actuel</h2>
-            <Button variant="destructive" onClick={gereRetraitToutesLesEntrees}>
-              Retirer toutes les entrées
-            </Button>
-          </div>
-          <Table>
-            <TableHeader>
-              <TableRow>
-                <TableHead>Nom du cours</TableHead>
-                <TableHead>Salle</TableHead>
-                <TableHead>Jour</TableHead>
-                <TableHead>Heure de début</TableHead>
-                <TableHead>Heure de fin</TableHead>
-                <TableHead className="text-right">Action</TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              {horaire.map((entry, index) => (
-                <TableRow key={index}>
-                  <TableCell>{entry.nomCours}</TableCell>
-                  <TableCell>{entry.salle}</TableCell>
-                  <TableCell>{entry.jour}</TableCell>
-                  <TableCell>{entry.heureDebut}</TableCell>
-                  <TableCell>{entry.heureFin}</TableCell>
-                  <TableCell className="text-right">
+      <div className="mb-6">
+        <div className="flex justify-between items-center mb-2">
+          <h2 className="text-xl font-semibold">Horaire actuel</h2>
+          <Button variant="destructive" onClick={gereRetraitToutesLesEntrees}>
+            Retirer toutes les entrées
+          </Button>
+        </div>
+        <Table>
+          <TableHeader>
+            <TableRow>
+              <TableHead>Nom du cours</TableHead>
+              <TableHead>Salle</TableHead>
+              <TableHead>Jour</TableHead>
+              <TableHead>Heure de début</TableHead>
+              <TableHead>Heure de fin</TableHead>
+              <TableHead className="text-right">Action</TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            {horaire.map((entry, index) => (
+              <TableRow key={index}>
+                <TableCell>
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                  >
+                    {entry.nomCours}
+                  </motion.div>
+                </TableCell>
+                <TableCell>
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                  >
+                    {entry.salle}
+                  </motion.div>
+                </TableCell>
+                <TableCell>
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                  >
+                    {entry.jour}
+                  </motion.div>
+                </TableCell>
+                <TableCell>
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                  >
+                    {entry.heureDebut}
+                  </motion.div>
+                </TableCell>
+                <TableCell>
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                  >
+                    {entry.heureFin}
+                  </motion.div>
+                </TableCell>
+                <TableCell className="text-right">
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                  >
                     <Button
                       variant="ghost"
                       size="icon"
@@ -392,13 +449,13 @@ export function HoraireHebdoComponent() {
                       <Trash2 className="h-4 w-4" />
                       <span className="sr-only">Retirer entrée</span>
                     </Button>
-                  </TableCell>
-                </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </div>
-      )}
+                  </motion.div>
+                </TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </div>
 
       <div className="grid grid-cols-2 gap-4">
         <div>
@@ -417,7 +474,7 @@ export function HoraireHebdoComponent() {
           </Select>
         </div>
         <div>
-          <Label htmlFor="ajouterSemaine">Ajouter le numéro de semaine?</Label>
+          <Label htmlFor="ajouterSemaine">Numéro de semaine?</Label>
           <Input
             id="ajouterSemaine"
             checked={ajouterSemaine}
@@ -427,20 +484,34 @@ export function HoraireHebdoComponent() {
         </div>
       </div>
 
-      <Button
-        onClick={gereGenererCalendrier}
-        className="w-full"
-        disabled={genererDisabled}
+      <motion.div
+        animate={{
+          opacity: !genererDisabled ? 1 : 0.5,
+          cursor: !genererDisabled ? 'pointer' : 'not-allowed',
+        }}
+        transition={{ duration: 1.5 }}
+        className="mt-4 w-full flex justify-between"
       >
-        Générer le ficher de calendrier
-      </Button>
-      <Button
-        onClick={genererExcel}
-        className="w-full mt-4"
-        disabled={genererDisabled}
-      >
-        Générer le fichier Excel
-      </Button>
+        <Button
+          onClick={gereGenererCalendrier}
+          disabled={genererDisabled}
+          className="w-full"
+        >
+          Générer le ficher de rendez-vous (.ics)
+        </Button>
+        <DropdownMenu>
+          <DropdownMenuTrigger disabled={genererDisabled}>
+            <Button disabled={genererDisabled}>
+              <ArrowDown className="h-3 w-3" />
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent>
+            <DropdownMenuLabel>Autres formats</DropdownMenuLabel>
+            <DropdownMenuSeparator />
+            <DropdownMenuItem onClick={genererExcel}>Excel</DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
+      </motion.div>
     </div>
   );
 }

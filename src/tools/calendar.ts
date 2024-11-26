@@ -49,7 +49,6 @@ export function genererCalendrier(
           heureDebutSansMinutes,
           heureDebutSeulementMinutes,
         ];
-        console.log(tableauDebut);
         const dureeHeure = heureFinSansMinutes - heureDebutSansMinutes - 1;
         const dureeMinutes = 50;
         let nomCoursComplet = entree.nomCours;
