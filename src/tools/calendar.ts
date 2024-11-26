@@ -52,8 +52,11 @@ export function genererCalendrier(
         const dureeHeure = heureFinSansMinutes - heureDebutSansMinutes - 1;
         const dureeMinutes = 50;
         let nomCoursComplet = entree.nomCours;
+        if (entree.groupe) {
+          nomCoursComplet = `${entree.nomCours} - Gr ${entree.groupe}`;
+        }
         if (ajouterSemaine) {
-          nomCoursComplet = `${entree.nomCours} - Sem. ${jour.numeroSemaine}`;
+          nomCoursComplet = `${nomCoursComplet} - Sem. ${jour.numeroSemaine}`;
         }
         calendrier.push({
           title: nomCoursComplet,

@@ -65,6 +65,7 @@ import * as XLSX from 'xlsx';
 
 export function HoraireHebdoComponent() {
   const [nomCours, setNomCours] = useState('');
+  const [groupe, setGroupe] = useState('');
   const [salle, setSalle] = useState('');
   const [heureDebut, setHeureDebut] = useState('');
   const [heureFin, setHeureFin] = useState('');
@@ -75,6 +76,7 @@ export function HoraireHebdoComponent() {
   const [genererDisabled, setGenererDisabled] = useState(true);
   const [erreurs, setErreurs] = useState({
     nomCours: '',
+    groupe: '',
     salle: '',
     heureDebut: '',
     heureFin: '',
@@ -130,6 +132,7 @@ export function HoraireHebdoComponent() {
     let estValide = true;
     const nouvellesErreurs = {
       nomCours: '',
+      groupe: '',
       salle: '',
       heureDebut: '',
       heureFin: '',
@@ -181,6 +184,7 @@ export function HoraireHebdoComponent() {
         ...horaire,
         {
           nomCours: nomCours,
+          groupe: groupe,
           salle: salle,
           heureDebut: heureDebut,
           heureFin: heureFin,
@@ -188,6 +192,7 @@ export function HoraireHebdoComponent() {
         },
       ]);
       setNomCours('');
+      setGroupe('');
       setSalle('');
       setHeureDebut('');
       setHeureFin('');
@@ -275,20 +280,33 @@ export function HoraireHebdoComponent() {
       </h1>
 
       <form onSubmit={gereAjoutEntree} className="space-y-4 mb-6">
-        <div>
-          <Label htmlFor="nomCours">Nom du cours</Label>
-          <Input
-            id="nomCours"
-            value={nomCours}
-            onChange={(e) => setNomCours(e.target.value)}
-            required
-            className={erreurs.nomCours ? 'border-red-500' : ''}
-          />
-          {erreurs.nomCours && (
-            <p className="text-red-500 text-sm mt-1">{erreurs.nomCours}</p>
-          )}
+        <div className="grid grid-cols-2 gap-4">
+          <div>
+            <Label htmlFor="nomCours">Nom du cours</Label>
+            <Input
+              id="nomCours"
+              value={nomCours}
+              onChange={(e) => setNomCours(e.target.value)}
+              required
+              className={erreurs.nomCours ? 'border-red-500' : ''}
+            />
+            {erreurs.nomCours && (
+              <p className="text-red-500 text-sm mt-1">{erreurs.nomCours}</p>
+            )}
+          </div>
+          <div>
+            <Label htmlFor="groupe">Groupe</Label>
+            <Input
+              id="groupe"
+              value={groupe}
+              onChange={(e) => setGroupe(e.target.value)}
+              className={erreurs.groupe ? 'border-red-500' : ''}
+            />
+            {erreurs.groupe && (
+              <p className="text-red-500 text-sm mt-1">{erreurs.groupe}</p>
+            )}
+          </div>
         </div>
-
         <div className="grid grid-cols-2 gap-4">
           <div>
             <Label htmlFor="salle">Salle</Label>

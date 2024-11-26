@@ -18,6 +18,7 @@
 
 export default interface IEntree {
   nomCours: string;
+  groupe: string;
   salle: string;
   heureDebut: string;
   heureFin: string;
