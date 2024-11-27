@@ -37,7 +37,7 @@ export default function GrosCalendrier({
       ajouterSemaine
     );
     setEvents(calendrier);
-    setDefaultDate(new Date(calendrier[0].start));
+    if (calendrier.length > 0) setDefaultDate(new Date(calendrier[0].start));
   }, [horaire, joursCalendrier, ajouterSemaine]);
 
   if (!isOpen) {
