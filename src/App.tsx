@@ -21,7 +21,7 @@ import { HoraireHebdoComponent } from './components/horaire-hebdo';
 function App() {
   return (
     <>
-      <div className="flex justify-end items-center h-screen">
+      <div className="flex justify-end items-center">
         <HoraireHebdoComponent />
         <img
           src="/cegep.png"

@@ -16,11 +16,17 @@
  * <https://www.gnu.org/licenses/>.
  */
 
-export default interface IEntreeCalendrier {
+export interface IEntreeCalendrierICS {
   title: string;
   location: string;
   start: [number, number, number, number, number];
   duration: { hours: number; minutes: number };
   busyStatus: 'FREE' | 'BUSY' | 'TENTATIVE' | 'OOF' | undefined;
   startOutputType?: 'local' | 'utc' | undefined;
+}
+
+export interface IEntreeCalendrier {
+  title: string;
+  start: Date;
+  end: Date;
 }

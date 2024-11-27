@@ -63,6 +63,9 @@ import * as ics from 'ics';
 import { saveAs } from 'file-saver';
 import * as XLSX from 'xlsx';
 
+import GrosCalendrier from './gros-calendrier';
+import IJourCalendrier from '@/models/ijourcalendrier';
+
 export function HoraireHebdoComponent() {
   const [nomCours, setNomCours] = useState('');
   const [groupe, setGroupe] = useState('');
@@ -72,6 +75,7 @@ export function HoraireHebdoComponent() {
   const [jour, setJour] = useState('');
   const [horaire, setHoraire] = useState<IEntree[]>([]);
   const [session, setSession] = useState('');
+  const [joursCalendrier, setJoursCalendrier] = useState<IJourCalendrier[]>([]);
   const [ajouterSemaine, setAjouterSemaine] = useState(false);
   const [genererDisabled, setGenererDisabled] = useState(true);
   const [erreurs, setErreurs] = useState({
@@ -82,6 +86,40 @@ export function HoraireHebdoComponent() {
     heureFin: '',
     jour: '',
   });
+  const [isOpen, setIsOpen] = useState(false);
+
+  const genererCalendrierAvecStartEtEnd = (horaire: IEntree[]) => {
+    // Extraire le calendrier pour la session sélectionnée
+    const calendrierData = collegeCalendarData.filter(
+      (calendrier) => calendrier.session === session
+    )[0];
+
+    // Générer le calendrier en prenant l'horaire hebdo et le calendrier scolaire pour la session sélectionnée
+    const calendrier = genererCalendrier(
+      horaire,
+      calendrierData.calendrier,
+      ajouterSemaine
+    );
+
+    const calendrierAvecStartEtEnd = calendrier.map((entry) => {
+      const startDate = new Date(
+        entry.start[0],
+        entry.start[1] - 1,
+        entry.start[2],
+        entry.start[3],
+        entry.start[4]
+      );
+      const endDate = new Date(startDate);
+      endDate.setHours(endDate.getHours() + entry.duration.hours);
+      endDate.setMinutes(endDate.getMinutes() + entry.duration.minutes);
+      return {
+        title: entry.title,
+        start: startDate,
+        end: endDate,
+      };
+    });
+    return calendrierAvecStartEtEnd;
+  };
 
   // Activer le bouton seulement si une session et des entrées sont présentes
   useEffect(() => {
@@ -100,6 +138,16 @@ export function HoraireHebdoComponent() {
       setHeureFin(`${heureFin}:05`);
     }
   }, [heureDebut]);
+
+  useEffect(() => {
+    if (!session) return;
+    // Extraire le calendrier pour la session sélectionnée
+    const calendrierData = collegeCalendarData.filter(
+      (calendrier) => calendrier.session === session
+    )[0];
+
+    setJoursCalendrier(calendrierData.calendrier);
+  }, [session]);
 
   // Générer les heures début à la minute 15 de chaque heure
   const listeHeureDebut = Array.from({ length: 24 }, (_, i) => {
@@ -235,37 +283,9 @@ export function HoraireHebdoComponent() {
   };
 
   const genererExcel = () => {
-    // Extraire le calendrier pour la session sélectionnée
-    const calendrierData = collegeCalendarData.filter(
-      (calendrier) => calendrier.session === session
-    )[0];
-
-    // Générer le calendrier en prenant l'horaire hebdo et le calendrier scolaire pour la session sélectionnée
-    const calendrier = genererCalendrier(
-      horaire,
-      calendrierData.calendrier,
-      ajouterSemaine
+    const ws = XLSX.utils.json_to_sheet(
+      genererCalendrierAvecStartEtEnd(horaire)
     );
-
-    const calendrierAvecStartEtEnd = calendrier.map((entry) => {
-      const startDate = new Date(
-        entry.start[0],
-        entry.start[1] - 1,
-        entry.start[2],
-        entry.start[3],
-        entry.start[4]
-      );
-      const endDate = new Date(startDate);
-      endDate.setHours(endDate.getHours() + entry.duration.hours);
-      endDate.setMinutes(endDate.getMinutes() + entry.duration.minutes);
-      return {
-        ...entry,
-        start: startDate.toLocaleString(),
-        end: endDate.toLocaleString(),
-      };
-    });
-
-    const ws = XLSX.utils.json_to_sheet(calendrierAvecStartEtEnd);
     const wb = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(wb, ws, 'Horaire');
     const excelBuffer = XLSX.write(wb, { bookType: 'xlsx', type: 'array' });
@@ -520,6 +540,14 @@ export function HoraireHebdoComponent() {
         className="mt-4 w-full flex justify-between"
       >
         <Button
+          onClick={() => setIsOpen(!isOpen)}
+          className="w-full"
+          disabled={genererDisabled}
+        >
+          Afficher calendrier
+        </Button>
+
+        <Button
           onClick={gereGenererCalendrier}
           disabled={genererDisabled}
           className="w-full"
@@ -539,6 +567,13 @@ export function HoraireHebdoComponent() {
           </DropdownMenuContent>
         </DropdownMenu>
       </motion.div>
+      <GrosCalendrier
+        horaire={horaire}
+        joursCalendrier={joursCalendrier}
+        ajouterSemaine={ajouterSemaine}
+        isOpen={isOpen}
+        onClose={() => setIsOpen(false)}
+      />
     </div>
   );
 }

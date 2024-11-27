@@ -17,15 +17,15 @@
  */
 
 import IEntree from '@/models/ientree';
-import IEntreeCalendrier from '@/models/ientreeCalendrier';
+import { IEntreeCalendrierICS } from '@/models/ientreeCalendrier';
 import IJourCalendrier from '@/models/ijourcalendrier';
 
 export function genererCalendrier(
   entrees: IEntree[],
   joursCalendrier: IJourCalendrier[],
   ajouterSemaine: boolean
-): IEntreeCalendrier[] {
-  const calendrier: IEntreeCalendrier[] = [];
+): IEntreeCalendrierICS[] {
+  const calendrier: IEntreeCalendrierICS[] = [];
 
   joursCalendrier.forEach((jour) => {
     const jourDate = new Date(jour.date);
@@ -72,3 +72,35 @@ export function genererCalendrier(
 
   return calendrier;
 }
+
+export const genererCalendrierAvecStartEtEnd = (
+  horaire: IEntree[],
+  joursCalendrier: IJourCalendrier[],
+  ajouterSemaine: boolean
+) => {
+  // Générer le calendrier en prenant l'horaire hebdo et le calendrier scolaire pour la session sélectionnée
+  const calendrier = genererCalendrier(
+    horaire,
+    joursCalendrier,
+    ajouterSemaine
+  );
+
+  const calendrierAvecStartEtEnd = calendrier.map((entry) => {
+    const startDate = new Date(
+      entry.start[0],
+      entry.start[1] - 1,
+      entry.start[2],
+      entry.start[3],
+      entry.start[4]
+    );
+    const endDate = new Date(startDate);
+    endDate.setHours(endDate.getHours() + entry.duration.hours);
+    endDate.setMinutes(endDate.getMinutes() + entry.duration.minutes);
+    return {
+      title: entry.title,
+      start: startDate,
+      end: endDate,
+    };
+  });
+  return calendrierAvecStartEtEnd;
+};
