@@ -16,6 +16,16 @@
  * <https://www.gnu.org/licenses/>.
  */
 
+export interface ITrigger {
+  hours: number;
+  minutes: number;
+  before: boolean;
+}
+export interface IAlarme {
+  action: 'display';
+  trigger: ITrigger;
+  description: string;
+}
 export interface IEntreeCalendrierICS {
   title: string;
   location: string;
@@ -23,6 +33,7 @@ export interface IEntreeCalendrierICS {
   duration: { hours: number; minutes: number };
   busyStatus: 'FREE' | 'BUSY' | 'TENTATIVE' | 'OOF' | undefined;
   startOutputType?: 'local' | 'utc' | undefined;
+  alarms?: IAlarme[];
 }
 
 export interface IEntreeCalendrier {

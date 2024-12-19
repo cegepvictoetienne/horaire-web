@@ -17,7 +17,7 @@
  */
 
 import IEntree from '@/models/ientree';
-import { IEntreeCalendrierICS } from '@/models/ientreeCalendrier';
+import { IAlarme, IEntreeCalendrierICS } from '@/models/ientreeCalendrier';
 import IJourCalendrier from '@/models/ijourcalendrier';
 
 export function genererCalendrier(
@@ -26,6 +26,14 @@ export function genererCalendrier(
   ajouterSemaine: boolean
 ): IEntreeCalendrierICS[] {
   const calendrier: IEntreeCalendrierICS[] = [];
+
+  let alarms: IAlarme[] = [
+    {
+      action: 'display',
+      trigger: { hours: 0, minutes: 15, before: true },
+      description: '15 minutes avant le cours',
+    },
+  ];
 
   joursCalendrier.forEach((jour) => {
     const jourDate = new Date(jour.date);
@@ -65,6 +73,7 @@ export function genererCalendrier(
           duration: { hours: dureeHeure, minutes: dureeMinutes },
           busyStatus: 'BUSY',
           startOutputType: 'local',
+          alarms: alarms,
         });
       }
     });
