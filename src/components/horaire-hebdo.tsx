@@ -73,6 +73,7 @@ export function HoraireHebdoComponent() {
   const [heureDebut, setHeureDebut] = useState('');
   const [heureFin, setHeureFin] = useState('');
   const [jour, setJour] = useState('');
+  const [rappel, setRappel] = useState('15 minutes avant');
   const [horaire, setHoraire] = useState<IEntree[]>([]);
   const [session, setSession] = useState('');
   const [joursCalendrier, setJoursCalendrier] = useState<IJourCalendrier[]>([]);
@@ -85,6 +86,7 @@ export function HoraireHebdoComponent() {
     heureDebut: '',
     heureFin: '',
     jour: '',
+    rappel: '',
   });
   const [isOpen, setIsOpen] = useState(false);
 
@@ -98,7 +100,8 @@ export function HoraireHebdoComponent() {
     const calendrier = genererCalendrier(
       horaire,
       calendrierData.calendrier,
-      ajouterSemaine
+      ajouterSemaine,
+      rappel
     );
 
     const calendrierAvecStartEtEnd = calendrier.map((entry) => {
@@ -176,6 +179,8 @@ export function HoraireHebdoComponent() {
     'Dimanche',
   ];
 
+  const listeRappels = ['15 minutes avant', '30 minutes avant', 'aucun rappel'];
+
   const validerFormulaire = () => {
     let estValide = true;
     const nouvellesErreurs = {
@@ -185,6 +190,7 @@ export function HoraireHebdoComponent() {
       heureDebut: '',
       heureFin: '',
       jour: '',
+      rappel: '',
     };
 
     if (!nomCours.trim()) {
@@ -267,7 +273,8 @@ export function HoraireHebdoComponent() {
     const calendrier = genererCalendrier(
       horaire,
       calendrierData.calendrier,
-      ajouterSemaine
+      ajouterSemaine,
+      rappel
     );
 
     // Créer le fichier de calendrier
@@ -528,6 +535,27 @@ export function HoraireHebdoComponent() {
             onChange={(e) => setAjouterSemaine(e.target.checked)}
             type="checkbox"
           />
+        </div>
+        <div>
+          <Label htmlFor="rappel">Rappel</Label>
+          <Select value={rappel} onValueChange={setRappel} required>
+            <SelectTrigger
+              id="rappel"
+              className={erreurs.rappel ? 'border-red-500' : ''}
+            >
+              <SelectValue placeholder="Choisir le rappel" />
+            </SelectTrigger>
+            <SelectContent>
+              {listeRappels.map((nomRappel) => (
+                <SelectItem key={nomRappel} value={nomRappel}>
+                  {nomRappel}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+          {erreurs.rappel && (
+            <p className="text-red-500 text-sm mt-1">{erreurs.rappel}</p>
+          )}
         </div>
       </div>
 

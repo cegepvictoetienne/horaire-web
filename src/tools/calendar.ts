@@ -23,17 +23,30 @@ import IJourCalendrier from '@/models/ijourcalendrier';
 export function genererCalendrier(
   entrees: IEntree[],
   joursCalendrier: IJourCalendrier[],
-  ajouterSemaine: boolean
+  ajouterSemaine: boolean,
+  rappel: string
 ): IEntreeCalendrierICS[] {
   const calendrier: IEntreeCalendrierICS[] = [];
 
-  let alarms: IAlarme[] = [
-    {
-      action: 'display',
-      trigger: { hours: 0, minutes: 15, before: true },
-      description: '15 minutes avant le cours',
-    },
-  ];
+  let alarms: IAlarme[];
+
+  if (rappel === '15 minutes avant') {
+    alarms = [
+      {
+        action: 'display',
+        trigger: { hours: 0, minutes: 15, before: true },
+        description: '15 minutes avant le cours',
+      },
+    ];
+  } else if (rappel === '30 minutes avant') {
+    alarms = [
+      {
+        action: 'display',
+        trigger: { hours: 0, minutes: 30, before: true },
+        description: '30 minutes avant le cours',
+      },
+    ];
+  }
 
   joursCalendrier.forEach((jour) => {
     const jourDate = new Date(jour.date);
@@ -91,7 +104,8 @@ export const genererCalendrierAvecStartEtEnd = (
   const calendrier = genererCalendrier(
     horaire,
     joursCalendrier,
-    ajouterSemaine
+    ajouterSemaine,
+    '15 minutes avant'
   );
 
   const calendrierAvecStartEtEnd = calendrier.map((entry) => {
