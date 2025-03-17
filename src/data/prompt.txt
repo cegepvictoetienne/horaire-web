@@ -1,0 +1,34 @@
+Peux-tu faire un script python qui génère un JSON qui représente un tableau de jours du calendrier scolaire. 
+
+Le format est le suivant pour chaque jour du tableau :
+
+{
+        "date": "2025-01-17",
+        "jourSemaine": "Vendredi",
+        "statut": "COMPLET",
+        "numeroSemaine": 1
+      }
+
+Le champ "date" représente la date du calendrier,
+Le champ "jourSemaine" représente le jour de la semaine de la date,
+Le champ "statut" doit être "COMPLET" pour un jour de semaine et "CONGÉ" pour la fin de semaine,
+Le champ "numeroSemaine" représente le nombre d'occurence d'un jourSemaine dans le tableau. Par exemple, le premier lundi a 1, le deuxième lundi a 2, etc.
+
+Il faut considérer les jours suivants comme un statut "CONGÉ" :
+
+2025-09-02
+2025-10-14
+2025-10-15
+2025-10-16
+2025-10-17
+2025-10-18
+2025-11-06
+
+Les jours de congés ne comptent pas pour le calcul du jour de la semaine.
+
+Prend en compte aussi les dates suivantes ont un jourSemaine différent de la normale :
+
+2025-09-05 est un lundi
+2025-11-08 est un mercredi.
+
+
