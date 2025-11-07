@@ -42,14 +42,16 @@ def generer_calendrier(debut, fin, jours_feries, jours_speciaux, demi_journees):
     return calendrier
 
 # Définition des dates et exceptions
-debut_session = datetime.date(2025, 8, 21)
-fin_session = datetime.date(2025, 12, 15)
-jours_feries = {"2025-09-01", "2025-10-13", "2025-10-14", "2025-10-15", "2025-10-16", "2025-10-17", "2025-11-05"}
-jours_speciaux = {"2025-09-04": "Lundi", "2025-09-12": "Mardi", "2025-11-03": "Mercredi"}
-demi_journees = {"2025-09-09": "AM", "2025-09-16": "PM"}
+debut_session = datetime.date(2026, 1, 16)
+fin_session = datetime.date(2026, 5, 15)
+jours_feries = { "2026-03-02", "2026-03-03", "2026-03-04", 
+     "2026-03-05", "2026-03-06", "2026-03-24", "2026-04-03", "2026-04-06", "2026-04-24", 
+     "2026-05-01", "2026-05-13"}
+jours_speciaux = {"2026-03-27": "Mardi", "2026-04-23": "Vendredi", "2026-04-28": "Vendredi"}
+demies_journees = {}
 
 # Générer le calendrier
-calendrier_scolaire = generer_calendrier(debut_session, fin_session, jours_feries, jours_speciaux, demi_journees)
+calendrier_scolaire = generer_calendrier(debut_session, fin_session, jours_feries, jours_speciaux, demies_journees)
 
 # Sauvegarder en JSON
 with open("calendrier_scolaire.json", "w", encoding="utf-8") as f:

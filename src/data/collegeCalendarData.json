@@ -1,1430 +1,723 @@
 [
   {
-    "session": "Automne 2025",
+    "session": "Hiver 2026",
     "calendrier": [
       {
-        "date": "2025-08-21",
-        "jourSemaine": "Jeudi",
-        "statut": "COMPLET",
-        "numeroSemaine": 1
-      },
-      {
-        "date": "2025-08-22",
+        "date": "2026-01-16",
         "jourSemaine": "Vendredi",
         "statut": "COMPLET",
         "numeroSemaine": 1
       },
       {
-        "date": "2025-08-23",
+        "date": "2026-01-17",
         "jourSemaine": "Samedi",
         "statut": "CONGÉ",
         "numeroSemaine": 0
       },
       {
-        "date": "2025-08-24",
+        "date": "2026-01-18",
         "jourSemaine": "Dimanche",
         "statut": "CONGÉ",
         "numeroSemaine": 0
       },
       {
-        "date": "2025-08-25",
+        "date": "2026-01-19",
         "jourSemaine": "Lundi",
         "statut": "COMPLET",
         "numeroSemaine": 1
       },
       {
-        "date": "2025-08-26",
+        "date": "2026-01-20",
         "jourSemaine": "Mardi",
         "statut": "COMPLET",
         "numeroSemaine": 1
       },
       {
-        "date": "2025-08-27",
+        "date": "2026-01-21",
         "jourSemaine": "Mercredi",
         "statut": "COMPLET",
         "numeroSemaine": 1
       },
       {
-        "date": "2025-08-28",
+        "date": "2026-01-22",
         "jourSemaine": "Jeudi",
         "statut": "COMPLET",
-        "numeroSemaine": 2
+        "numeroSemaine": 1
       },
       {
-        "date": "2025-08-29",
+        "date": "2026-01-23",
         "jourSemaine": "Vendredi",
         "statut": "COMPLET",
         "numeroSemaine": 2
       },
       {
-        "date": "2025-08-30",
+        "date": "2026-01-24",
         "jourSemaine": "Samedi",
         "statut": "CONGÉ",
         "numeroSemaine": 0
       },
       {
-        "date": "2025-08-31",
+        "date": "2026-01-25",
         "jourSemaine": "Dimanche",
         "statut": "CONGÉ",
         "numeroSemaine": 0
       },
       {
-        "date": "2025-09-01",
-        "jourSemaine": "Lundi",
-        "statut": "CONGÉ",
-        "numeroSemaine": 0
-      },
-      {
-        "date": "2025-09-02",
-        "jourSemaine": "Mardi",
-        "statut": "COMPLET",
-        "numeroSemaine": 2
-      },
-      {
-        "date": "2025-09-03",
-        "jourSemaine": "Mercredi",
-        "statut": "COMPLET",
-        "numeroSemaine": 2
-      },
-      {
-        "date": "2025-09-04",
+        "date": "2026-01-26",
         "jourSemaine": "Lundi",
         "statut": "COMPLET",
         "numeroSemaine": 2
       },
       {
-        "date": "2025-09-05",
+        "date": "2026-01-27",
+        "jourSemaine": "Mardi",
+        "statut": "COMPLET",
+        "numeroSemaine": 2
+      },
+      {
+        "date": "2026-01-28",
+        "jourSemaine": "Mercredi",
+        "statut": "COMPLET",
+        "numeroSemaine": 2
+      },
+      {
+        "date": "2026-01-29",
+        "jourSemaine": "Jeudi",
+        "statut": "COMPLET",
+        "numeroSemaine": 2
+      },
+      {
+        "date": "2026-01-30",
         "jourSemaine": "Vendredi",
         "statut": "COMPLET",
         "numeroSemaine": 3
       },
       {
-        "date": "2025-09-06",
+        "date": "2026-01-31",
         "jourSemaine": "Samedi",
         "statut": "CONGÉ",
         "numeroSemaine": 0
       },
       {
-        "date": "2025-09-07",
+        "date": "2026-02-01",
         "jourSemaine": "Dimanche",
         "statut": "CONGÉ",
         "numeroSemaine": 0
       },
       {
-        "date": "2025-09-08",
+        "date": "2026-02-02",
         "jourSemaine": "Lundi",
         "statut": "COMPLET",
         "numeroSemaine": 3
       },
       {
-        "date": "2025-09-09",
+        "date": "2026-02-03",
         "jourSemaine": "Mardi",
-        "statut": "AM",
-        "numeroSemaine": 3
-      },
-      {
-        "date": "2025-09-10",
-        "jourSemaine": "Mercredi",
         "statut": "COMPLET",
         "numeroSemaine": 3
       },
       {
-        "date": "2025-09-11",
+        "date": "2026-02-04",
+        "jourSemaine": "Mercredi",
+        "statut": "COMPLET",
+        "numeroSemaine": 3
+      },
+      {
+        "date": "2026-02-05",
         "jourSemaine": "Jeudi",
         "statut": "COMPLET",
         "numeroSemaine": 3
       },
       {
-        "date": "2025-09-12",
-        "jourSemaine": "Mardi",
-        "statut": "COMPLET",
-        "numeroSemaine": 4
-      },
-      {
-        "date": "2025-09-13",
-        "jourSemaine": "Samedi",
-        "statut": "CONGÉ",
-        "numeroSemaine": 0
-      },
-      {
-        "date": "2025-09-14",
-        "jourSemaine": "Dimanche",
-        "statut": "CONGÉ",
-        "numeroSemaine": 0
-      },
-      {
-        "date": "2025-09-15",
-        "jourSemaine": "Lundi",
-        "statut": "COMPLET",
-        "numeroSemaine": 4
-      },
-      {
-        "date": "2025-09-16",
-        "jourSemaine": "Mardi",
-        "statut": "PM",
-        "numeroSemaine": 4
-      },
-      {
-        "date": "2025-09-17",
-        "jourSemaine": "Mercredi",
-        "statut": "COMPLET",
-        "numeroSemaine": 4
-      },
-      {
-        "date": "2025-09-18",
-        "jourSemaine": "Jeudi",
-        "statut": "COMPLET",
-        "numeroSemaine": 4
-      },
-      {
-        "date": "2025-09-19",
+        "date": "2026-02-06",
         "jourSemaine": "Vendredi",
         "statut": "COMPLET",
         "numeroSemaine": 4
       },
       {
-        "date": "2025-09-20",
+        "date": "2026-02-07",
         "jourSemaine": "Samedi",
         "statut": "CONGÉ",
         "numeroSemaine": 0
       },
       {
-        "date": "2025-09-21",
+        "date": "2026-02-08",
         "jourSemaine": "Dimanche",
         "statut": "CONGÉ",
         "numeroSemaine": 0
       },
       {
-        "date": "2025-09-22",
+        "date": "2026-02-09",
         "jourSemaine": "Lundi",
         "statut": "COMPLET",
-        "numeroSemaine": 5
+        "numeroSemaine": 4
       },
       {
-        "date": "2025-09-23",
+        "date": "2026-02-10",
         "jourSemaine": "Mardi",
         "statut": "COMPLET",
-        "numeroSemaine": 5
+        "numeroSemaine": 4
       },
       {
-        "date": "2025-09-24",
+        "date": "2026-02-11",
         "jourSemaine": "Mercredi",
         "statut": "COMPLET",
-        "numeroSemaine": 5
+        "numeroSemaine": 4
       },
       {
-        "date": "2025-09-25",
+        "date": "2026-02-12",
         "jourSemaine": "Jeudi",
         "statut": "COMPLET",
-        "numeroSemaine": 5
+        "numeroSemaine": 4
       },
       {
-        "date": "2025-09-26",
+        "date": "2026-02-13",
         "jourSemaine": "Vendredi",
         "statut": "COMPLET",
         "numeroSemaine": 5
       },
       {
-        "date": "2025-09-27",
+        "date": "2026-02-14",
         "jourSemaine": "Samedi",
         "statut": "CONGÉ",
         "numeroSemaine": 0
       },
       {
-        "date": "2025-09-28",
+        "date": "2026-02-15",
         "jourSemaine": "Dimanche",
         "statut": "CONGÉ",
         "numeroSemaine": 0
       },
       {
-        "date": "2025-09-29",
+        "date": "2026-02-16",
         "jourSemaine": "Lundi",
         "statut": "COMPLET",
-        "numeroSemaine": 6
+        "numeroSemaine": 5
       },
       {
-        "date": "2025-09-30",
+        "date": "2026-02-17",
         "jourSemaine": "Mardi",
         "statut": "COMPLET",
-        "numeroSemaine": 6
+        "numeroSemaine": 5
       },
       {
-        "date": "2025-10-01",
+        "date": "2026-02-18",
         "jourSemaine": "Mercredi",
         "statut": "COMPLET",
-        "numeroSemaine": 6
+        "numeroSemaine": 5
       },
       {
-        "date": "2025-10-02",
+        "date": "2026-02-19",
         "jourSemaine": "Jeudi",
         "statut": "COMPLET",
-        "numeroSemaine": 6
+        "numeroSemaine": 5
       },
       {
-        "date": "2025-10-03",
+        "date": "2026-02-20",
         "jourSemaine": "Vendredi",
         "statut": "COMPLET",
         "numeroSemaine": 6
       },
       {
-        "date": "2025-10-04",
+        "date": "2026-02-21",
         "jourSemaine": "Samedi",
         "statut": "CONGÉ",
         "numeroSemaine": 0
       },
       {
-        "date": "2025-10-05",
+        "date": "2026-02-22",
         "jourSemaine": "Dimanche",
         "statut": "CONGÉ",
         "numeroSemaine": 0
       },
       {
-        "date": "2025-10-06",
+        "date": "2026-02-23",
         "jourSemaine": "Lundi",
         "statut": "COMPLET",
-        "numeroSemaine": 7
+        "numeroSemaine": 6
       },
       {
-        "date": "2025-10-07",
+        "date": "2026-02-24",
         "jourSemaine": "Mardi",
         "statut": "COMPLET",
-        "numeroSemaine": 7
+        "numeroSemaine": 6
       },
       {
-        "date": "2025-10-08",
+        "date": "2026-02-25",
         "jourSemaine": "Mercredi",
         "statut": "COMPLET",
-        "numeroSemaine": 7
+        "numeroSemaine": 6
       },
       {
-        "date": "2025-10-09",
+        "date": "2026-02-26",
         "jourSemaine": "Jeudi",
         "statut": "COMPLET",
-        "numeroSemaine": 7
+        "numeroSemaine": 6
       },
       {
-        "date": "2025-10-10",
+        "date": "2026-02-27",
         "jourSemaine": "Vendredi",
         "statut": "COMPLET",
         "numeroSemaine": 7
       },
       {
-        "date": "2025-10-11",
+        "date": "2026-02-28",
         "jourSemaine": "Samedi",
         "statut": "CONGÉ",
         "numeroSemaine": 0
       },
       {
-        "date": "2025-10-12",
+        "date": "2026-03-01",
         "jourSemaine": "Dimanche",
         "statut": "CONGÉ",
         "numeroSemaine": 0
       },
       {
-        "date": "2025-10-13",
+        "date": "2026-03-02",
         "jourSemaine": "Lundi",
         "statut": "CONGÉ",
         "numeroSemaine": 0
       },
       {
-        "date": "2025-10-14",
+        "date": "2026-03-03",
         "jourSemaine": "Mardi",
         "statut": "CONGÉ",
         "numeroSemaine": 0
       },
       {
-        "date": "2025-10-15",
+        "date": "2026-03-04",
         "jourSemaine": "Mercredi",
         "statut": "CONGÉ",
         "numeroSemaine": 0
       },
       {
-        "date": "2025-10-16",
+        "date": "2026-03-05",
         "jourSemaine": "Jeudi",
         "statut": "CONGÉ",
         "numeroSemaine": 0
       },
       {
-        "date": "2025-10-17",
+        "date": "2026-03-06",
         "jourSemaine": "Vendredi",
         "statut": "CONGÉ",
         "numeroSemaine": 0
       },
       {
-        "date": "2025-10-18",
+        "date": "2026-03-07",
         "jourSemaine": "Samedi",
         "statut": "CONGÉ",
         "numeroSemaine": 0
       },
       {
-        "date": "2025-10-19",
+        "date": "2026-03-08",
         "jourSemaine": "Dimanche",
         "statut": "CONGÉ",
         "numeroSemaine": 0
       },
       {
-        "date": "2025-10-20",
+        "date": "2026-03-09",
+        "jourSemaine": "Lundi",
+        "statut": "COMPLET",
+        "numeroSemaine": 7
+      },
+      {
+        "date": "2026-03-10",
+        "jourSemaine": "Mardi",
+        "statut": "COMPLET",
+        "numeroSemaine": 7
+      },
+      {
+        "date": "2026-03-11",
+        "jourSemaine": "Mercredi",
+        "statut": "COMPLET",
+        "numeroSemaine": 7
+      },
+      {
+        "date": "2026-03-12",
+        "jourSemaine": "Jeudi",
+        "statut": "COMPLET",
+        "numeroSemaine": 7
+      },
+      {
+        "date": "2026-03-13",
+        "jourSemaine": "Vendredi",
+        "statut": "COMPLET",
+        "numeroSemaine": 8
+      },
+      {
+        "date": "2026-03-14",
+        "jourSemaine": "Samedi",
+        "statut": "CONGÉ",
+        "numeroSemaine": 0
+      },
+      {
+        "date": "2026-03-15",
+        "jourSemaine": "Dimanche",
+        "statut": "CONGÉ",
+        "numeroSemaine": 0
+      },
+      {
+        "date": "2026-03-16",
         "jourSemaine": "Lundi",
         "statut": "COMPLET",
         "numeroSemaine": 8
       },
       {
-        "date": "2025-10-21",
+        "date": "2026-03-17",
         "jourSemaine": "Mardi",
         "statut": "COMPLET",
         "numeroSemaine": 8
       },
       {
-        "date": "2025-10-22",
+        "date": "2026-03-18",
         "jourSemaine": "Mercredi",
         "statut": "COMPLET",
         "numeroSemaine": 8
       },
       {
-        "date": "2025-10-23",
+        "date": "2026-03-19",
         "jourSemaine": "Jeudi",
         "statut": "COMPLET",
         "numeroSemaine": 8
       },
       {
-        "date": "2025-10-24",
-        "jourSemaine": "Vendredi",
-        "statut": "COMPLET",
-        "numeroSemaine": 8
-      },
-      {
-        "date": "2025-10-25",
-        "jourSemaine": "Samedi",
-        "statut": "CONGÉ",
-        "numeroSemaine": 0
-      },
-      {
-        "date": "2025-10-26",
-        "jourSemaine": "Dimanche",
-        "statut": "CONGÉ",
-        "numeroSemaine": 0
-      },
-      {
-        "date": "2025-10-27",
-        "jourSemaine": "Lundi",
-        "statut": "COMPLET",
-        "numeroSemaine": 9
-      },
-      {
-        "date": "2025-10-28",
-        "jourSemaine": "Mardi",
-        "statut": "COMPLET",
-        "numeroSemaine": 9
-      },
-      {
-        "date": "2025-10-29",
-        "jourSemaine": "Mercredi",
-        "statut": "COMPLET",
-        "numeroSemaine": 9
-      },
-      {
-        "date": "2025-10-30",
-        "jourSemaine": "Jeudi",
-        "statut": "COMPLET",
-        "numeroSemaine": 9
-      },
-      {
-        "date": "2025-10-31",
+        "date": "2026-03-20",
         "jourSemaine": "Vendredi",
         "statut": "COMPLET",
         "numeroSemaine": 9
       },
       {
-        "date": "2025-11-01",
+        "date": "2026-03-21",
         "jourSemaine": "Samedi",
         "statut": "CONGÉ",
         "numeroSemaine": 0
       },
       {
-        "date": "2025-11-02",
+        "date": "2026-03-22",
         "jourSemaine": "Dimanche",
         "statut": "CONGÉ",
         "numeroSemaine": 0
       },
       {
-        "date": "2025-11-03",
-        "jourSemaine": "Mercredi",
+        "date": "2026-03-23",
+        "jourSemaine": "Lundi",
         "statut": "COMPLET",
-        "numeroSemaine": 10
+        "numeroSemaine": 9
       },
       {
-        "date": "2025-11-04",
+        "date": "2026-03-24",
         "jourSemaine": "Mardi",
-        "statut": "COMPLET",
-        "numeroSemaine": 10
-      },
-      {
-        "date": "2025-11-05",
-        "jourSemaine": "Mercredi",
         "statut": "CONGÉ",
         "numeroSemaine": 0
       },
       {
-        "date": "2025-11-06",
+        "date": "2026-03-25",
+        "jourSemaine": "Mercredi",
+        "statut": "COMPLET",
+        "numeroSemaine": 9
+      },
+      {
+        "date": "2026-03-26",
         "jourSemaine": "Jeudi",
         "statut": "COMPLET",
-        "numeroSemaine": 10
+        "numeroSemaine": 9
       },
       {
-        "date": "2025-11-07",
-        "jourSemaine": "Vendredi",
+        "date": "2026-03-27",
+        "jourSemaine": "Mardi",
         "statut": "COMPLET",
-        "numeroSemaine": 10
+        "numeroSemaine": 9
       },
       {
-        "date": "2025-11-08",
+        "date": "2026-03-28",
         "jourSemaine": "Samedi",
         "statut": "CONGÉ",
         "numeroSemaine": 0
       },
       {
-        "date": "2025-11-09",
+        "date": "2026-03-29",
         "jourSemaine": "Dimanche",
         "statut": "CONGÉ",
         "numeroSemaine": 0
       },
       {
-        "date": "2025-11-10",
+        "date": "2026-03-30",
         "jourSemaine": "Lundi",
         "statut": "COMPLET",
         "numeroSemaine": 10
       },
       {
-        "date": "2025-11-11",
+        "date": "2026-03-31",
         "jourSemaine": "Mardi",
         "statut": "COMPLET",
-        "numeroSemaine": 11
+        "numeroSemaine": 10
       },
       {
-        "date": "2025-11-12",
+        "date": "2026-04-01",
         "jourSemaine": "Mercredi",
         "statut": "COMPLET",
-        "numeroSemaine": 11
+        "numeroSemaine": 10
       },
       {
-        "date": "2025-11-13",
+        "date": "2026-04-02",
         "jourSemaine": "Jeudi",
         "statut": "COMPLET",
-        "numeroSemaine": 11
+        "numeroSemaine": 10
       },
       {
-        "date": "2025-11-14",
+        "date": "2026-04-03",
         "jourSemaine": "Vendredi",
-        "statut": "COMPLET",
-        "numeroSemaine": 11
+        "statut": "CONGÉ",
+        "numeroSemaine": 0
       },
       {
-        "date": "2025-11-15",
+        "date": "2026-04-04",
         "jourSemaine": "Samedi",
         "statut": "CONGÉ",
         "numeroSemaine": 0
       },
       {
-        "date": "2025-11-16",
+        "date": "2026-04-05",
         "jourSemaine": "Dimanche",
         "statut": "CONGÉ",
         "numeroSemaine": 0
       },
       {
-        "date": "2025-11-17",
+        "date": "2026-04-06",
+        "jourSemaine": "Lundi",
+        "statut": "CONGÉ",
+        "numeroSemaine": 0
+      },
+      {
+        "date": "2026-04-07",
+        "jourSemaine": "Mardi",
+        "statut": "COMPLET",
+        "numeroSemaine": 11
+      },
+      {
+        "date": "2026-04-08",
+        "jourSemaine": "Mercredi",
+        "statut": "COMPLET",
+        "numeroSemaine": 11
+      },
+      {
+        "date": "2026-04-09",
+        "jourSemaine": "Jeudi",
+        "statut": "COMPLET",
+        "numeroSemaine": 11
+      },
+      {
+        "date": "2026-04-10",
+        "jourSemaine": "Vendredi",
+        "statut": "COMPLET",
+        "numeroSemaine": 10
+      },
+      {
+        "date": "2026-04-11",
+        "jourSemaine": "Samedi",
+        "statut": "CONGÉ",
+        "numeroSemaine": 0
+      },
+      {
+        "date": "2026-04-12",
+        "jourSemaine": "Dimanche",
+        "statut": "CONGÉ",
+        "numeroSemaine": 0
+      },
+      {
+        "date": "2026-04-13",
         "jourSemaine": "Lundi",
         "statut": "COMPLET",
         "numeroSemaine": 11
       },
       {
-        "date": "2025-11-18",
+        "date": "2026-04-14",
         "jourSemaine": "Mardi",
         "statut": "COMPLET",
         "numeroSemaine": 12
       },
       {
-        "date": "2025-11-19",
+        "date": "2026-04-15",
         "jourSemaine": "Mercredi",
         "statut": "COMPLET",
         "numeroSemaine": 12
       },
       {
-        "date": "2025-11-20",
+        "date": "2026-04-16",
         "jourSemaine": "Jeudi",
         "statut": "COMPLET",
         "numeroSemaine": 12
       },
       {
-        "date": "2025-11-21",
+        "date": "2026-04-17",
         "jourSemaine": "Vendredi",
         "statut": "COMPLET",
-        "numeroSemaine": 12
+        "numeroSemaine": 11
       },
       {
-        "date": "2025-11-22",
+        "date": "2026-04-18",
         "jourSemaine": "Samedi",
         "statut": "CONGÉ",
         "numeroSemaine": 0
       },
       {
-        "date": "2025-11-23",
+        "date": "2026-04-19",
         "jourSemaine": "Dimanche",
         "statut": "CONGÉ",
         "numeroSemaine": 0
       },
       {
-        "date": "2025-11-24",
+        "date": "2026-04-20",
         "jourSemaine": "Lundi",
         "statut": "COMPLET",
         "numeroSemaine": 12
       },
       {
-        "date": "2025-11-25",
+        "date": "2026-04-21",
         "jourSemaine": "Mardi",
         "statut": "COMPLET",
         "numeroSemaine": 13
       },
       {
-        "date": "2025-11-26",
+        "date": "2026-04-22",
         "jourSemaine": "Mercredi",
         "statut": "COMPLET",
         "numeroSemaine": 13
       },
       {
-        "date": "2025-11-27",
-        "jourSemaine": "Jeudi",
-        "statut": "COMPLET",
-        "numeroSemaine": 13
-      },
-      {
-        "date": "2025-11-28",
+        "date": "2026-04-23",
         "jourSemaine": "Vendredi",
         "statut": "COMPLET",
-        "numeroSemaine": 13
+        "numeroSemaine": 12
       },
       {
-        "date": "2025-11-29",
+        "date": "2026-04-24",
+        "jourSemaine": "Vendredi",
+        "statut": "CONGÉ",
+        "numeroSemaine": 0
+      },
+      {
+        "date": "2026-04-25",
         "jourSemaine": "Samedi",
         "statut": "CONGÉ",
         "numeroSemaine": 0
       },
       {
-        "date": "2025-11-30",
+        "date": "2026-04-26",
         "jourSemaine": "Dimanche",
         "statut": "CONGÉ",
         "numeroSemaine": 0
       },
       {
-        "date": "2025-12-01",
+        "date": "2026-04-27",
         "jourSemaine": "Lundi",
         "statut": "COMPLET",
         "numeroSemaine": 13
       },
       {
-        "date": "2025-12-02",
-        "jourSemaine": "Mardi",
+        "date": "2026-04-28",
+        "jourSemaine": "Vendredi",
         "statut": "COMPLET",
-        "numeroSemaine": 14
+        "numeroSemaine": 13
       },
       {
-        "date": "2025-12-03",
+        "date": "2026-04-29",
         "jourSemaine": "Mercredi",
         "statut": "COMPLET",
         "numeroSemaine": 14
       },
       {
-        "date": "2025-12-04",
+        "date": "2026-04-30",
         "jourSemaine": "Jeudi",
         "statut": "COMPLET",
-        "numeroSemaine": 14
+        "numeroSemaine": 13
       },
       {
-        "date": "2025-12-05",
+        "date": "2026-05-01",
         "jourSemaine": "Vendredi",
-        "statut": "COMPLET",
-        "numeroSemaine": 14
+        "statut": "CONGÉ",
+        "numeroSemaine": 0
       },
       {
-        "date": "2025-12-06",
+        "date": "2026-05-02",
         "jourSemaine": "Samedi",
         "statut": "CONGÉ",
         "numeroSemaine": 0
       },
       {
-        "date": "2025-12-07",
+        "date": "2026-05-03",
         "jourSemaine": "Dimanche",
         "statut": "CONGÉ",
         "numeroSemaine": 0
       },
       {
-        "date": "2025-12-08",
+        "date": "2026-05-04",
         "jourSemaine": "Lundi",
         "statut": "COMPLET",
         "numeroSemaine": 14
       },
       {
-        "date": "2025-12-09",
+        "date": "2026-05-05",
         "jourSemaine": "Mardi",
         "statut": "COMPLET",
-        "numeroSemaine": 15
+        "numeroSemaine": 14
       },
       {
-        "date": "2025-12-10",
+        "date": "2026-05-06",
         "jourSemaine": "Mercredi",
         "statut": "COMPLET",
         "numeroSemaine": 15
       },
       {
-        "date": "2025-12-11",
+        "date": "2026-05-07",
         "jourSemaine": "Jeudi",
         "statut": "COMPLET",
-        "numeroSemaine": 15
+        "numeroSemaine": 14
       },
       {
-        "date": "2025-12-12",
+        "date": "2026-05-08",
         "jourSemaine": "Vendredi",
         "statut": "COMPLET",
-        "numeroSemaine": 15
+        "numeroSemaine": 14
       },
       {
-        "date": "2025-12-13",
+        "date": "2026-05-09",
         "jourSemaine": "Samedi",
         "statut": "CONGÉ",
         "numeroSemaine": 0
       },
       {
-        "date": "2025-12-14",
+        "date": "2026-05-10",
         "jourSemaine": "Dimanche",
         "statut": "CONGÉ",
         "numeroSemaine": 0
       },
       {
-        "date": "2025-12-15",
-        "jourSemaine": "Lundi",
-        "statut": "COMPLET",
-        "numeroSemaine": 15
-      }
-    ]
-  },
-  {
-    "session": "Hiver 2025",
-    "calendrier": [
-      {
-        "date": "2025-01-17",
-        "jourSemaine": "Vendredi",
-        "statut": "COMPLET",
-        "numeroSemaine": 1
-      },
-      {
-        "date": "2025-01-18",
-        "jourSemaine": "Samedi",
-        "statut": "CONGÉ",
-        "numeroSemaine": 1
-      },
-      {
-        "date": "2025-01-19",
-        "jourSemaine": "Dimanche",
-        "statut": "CONGÉ",
-        "numeroSemaine": 1
-      },
-      {
-        "date": "2025-01-20",
-        "jourSemaine": "Lundi",
-        "statut": "COMPLET",
-        "numeroSemaine": 1
-      },
-      {
-        "date": "2025-01-21",
-        "jourSemaine": "Mardi",
-        "statut": "COMPLET",
-        "numeroSemaine": 1
-      },
-      {
-        "date": "2025-01-22",
-        "jourSemaine": "Mercredi",
-        "statut": "COMPLET",
-        "numeroSemaine": 1
-      },
-      {
-        "date": "2025-01-23",
-        "jourSemaine": "Jeudi",
-        "statut": "COMPLET",
-        "numeroSemaine": 1
-      },
-      {
-        "date": "2025-01-24",
-        "jourSemaine": "Vendredi",
-        "statut": "COMPLET",
-        "numeroSemaine": 2
-      },
-      {
-        "date": "2025-01-25",
-        "jourSemaine": "Samedi",
-        "statut": "CONGÉ",
-        "numeroSemaine": 2
-      },
-      {
-        "date": "2025-01-26",
-        "jourSemaine": "Dimanche",
-        "statut": "CONGÉ",
-        "numeroSemaine": 2
-      },
-      {
-        "date": "2025-01-27",
-        "jourSemaine": "Lundi",
-        "statut": "COMPLET",
-        "numeroSemaine": 2
-      },
-      {
-        "date": "2025-01-28",
-        "jourSemaine": "Mardi",
-        "statut": "COMPLET",
-        "numeroSemaine": 2
-      },
-      {
-        "date": "2025-01-29",
-        "jourSemaine": "Mercredi",
-        "statut": "COMPLET",
-        "numeroSemaine": 2
-      },
-      {
-        "date": "2025-01-30",
-        "jourSemaine": "Jeudi",
-        "statut": "COMPLET",
-        "numeroSemaine": 2
-      },
-      {
-        "date": "2025-01-31",
-        "jourSemaine": "Vendredi",
-        "statut": "COMPLET",
-        "numeroSemaine": 3
-      },
-      {
-        "date": "2025-02-01",
-        "jourSemaine": "Samedi",
-        "statut": "CONGÉ",
-        "numeroSemaine": 3
-      },
-      {
-        "date": "2025-02-02",
-        "jourSemaine": "Dimanche",
-        "statut": "CONGÉ",
-        "numeroSemaine": 3
-      },
-      {
-        "date": "2025-02-03",
-        "jourSemaine": "Lundi",
-        "statut": "COMPLET",
-        "numeroSemaine": 3
-      },
-      {
-        "date": "2025-02-04",
-        "jourSemaine": "Mardi",
-        "statut": "COMPLET",
-        "numeroSemaine": 3
-      },
-      {
-        "date": "2025-02-05",
-        "jourSemaine": "Mercredi",
-        "statut": "COMPLET",
-        "numeroSemaine": 3
-      },
-      {
-        "date": "2025-02-06",
-        "jourSemaine": "Jeudi",
-        "statut": "COMPLET",
-        "numeroSemaine": 3
-      },
-      {
-        "date": "2025-02-07",
-        "jourSemaine": "Vendredi",
-        "statut": "COMPLET",
-        "numeroSemaine": 4
-      },
-      {
-        "date": "2025-02-08",
-        "jourSemaine": "Samedi",
-        "statut": "CONGÉ",
-        "numeroSemaine": 4
-      },
-      {
-        "date": "2025-02-09",
-        "jourSemaine": "Dimanche",
-        "statut": "CONGÉ",
-        "numeroSemaine": 4
-      },
-      {
-        "date": "2025-02-10",
-        "jourSemaine": "Lundi",
-        "statut": "COMPLET",
-        "numeroSemaine": 4
-      },
-      {
-        "date": "2025-02-11",
-        "jourSemaine": "Mardi",
-        "statut": "COMPLET",
-        "numeroSemaine": 4
-      },
-      {
-        "date": "2025-02-12",
-        "jourSemaine": "Mercredi",
-        "statut": "COMPLET",
-        "numeroSemaine": 4
-      },
-      {
-        "date": "2025-02-13",
-        "jourSemaine": "Jeudi",
-        "statut": "COMPLET",
-        "numeroSemaine": 4
-      },
-      {
-        "date": "2025-02-14",
-        "jourSemaine": "Vendredi",
-        "statut": "COMPLET",
-        "numeroSemaine": 5
-      },
-      {
-        "date": "2025-02-15",
-        "jourSemaine": "Samedi",
-        "statut": "CONGÉ",
-        "numeroSemaine": 5
-      },
-      {
-        "date": "2025-02-16",
-        "jourSemaine": "Dimanche",
-        "statut": "CONGÉ",
-        "numeroSemaine": 5
-      },
-      {
-        "date": "2025-02-17",
-        "jourSemaine": "Lundi",
-        "statut": "COMPLET",
-        "numeroSemaine": 5
-      },
-      {
-        "date": "2025-02-18",
-        "jourSemaine": "Mardi",
-        "statut": "COMPLET",
-        "numeroSemaine": 5
-      },
-      {
-        "date": "2025-02-19",
-        "jourSemaine": "Mercredi",
-        "statut": "COMPLET",
-        "numeroSemaine": 5
-      },
-      {
-        "date": "2025-02-20",
-        "jourSemaine": "Jeudi",
-        "statut": "COMPLET",
-        "numeroSemaine": 5
-      },
-      {
-        "date": "2025-02-21",
-        "jourSemaine": "Vendredi",
-        "statut": "COMPLET",
-        "numeroSemaine": 6
-      },
-      {
-        "date": "2025-02-22",
-        "jourSemaine": "Samedi",
-        "statut": "CONGÉ",
-        "numeroSemaine": 6
-      },
-      {
-        "date": "2025-02-23",
-        "jourSemaine": "Dimanche",
-        "statut": "CONGÉ",
-        "numeroSemaine": 6
-      },
-      {
-        "date": "2025-02-24",
-        "jourSemaine": "Lundi",
-        "statut": "COMPLET",
-        "numeroSemaine": 6
-      },
-      {
-        "date": "2025-02-25",
-        "jourSemaine": "Mardi",
-        "statut": "COMPLET",
-        "numeroSemaine": 6
-      },
-      {
-        "date": "2025-02-26",
-        "jourSemaine": "Mercredi",
-        "statut": "COMPLET",
-        "numeroSemaine": 6
-      },
-      {
-        "date": "2025-02-27",
-        "jourSemaine": "Jeudi",
-        "statut": "COMPLET",
-        "numeroSemaine": 6
-      },
-      {
-        "date": "2025-02-28",
-        "jourSemaine": "Vendredi",
-        "statut": "COMPLET",
-        "numeroSemaine": 7
-      },
-      {
-        "date": "2025-03-01",
-        "jourSemaine": "Samedi",
-        "statut": "CONGÉ",
-        "numeroSemaine": 7
-      },
-      {
-        "date": "2025-03-02",
-        "jourSemaine": "Dimanche",
-        "statut": "CONGÉ",
-        "numeroSemaine": 7
-      },
-      {
-        "date": "2025-03-03",
-        "jourSemaine": "Lundi",
-        "statut": "CONGÉ",
-        "numeroSemaine": 7
-      },
-      {
-        "date": "2025-03-04",
-        "jourSemaine": "Mardi",
-        "statut": "CONGÉ",
-        "numeroSemaine": 7
-      },
-      {
-        "date": "2025-03-05",
-        "jourSemaine": "Mercredi",
-        "statut": "CONGÉ",
-        "numeroSemaine": 7
-      },
-      {
-        "date": "2025-03-06",
-        "jourSemaine": "Jeudi",
-        "statut": "CONGÉ",
-        "numeroSemaine": 7
-      },
-      {
-        "date": "2025-03-07",
-        "jourSemaine": "Vendredi",
-        "statut": "CONGÉ",
-        "numeroSemaine": 7
-      },
-      {
-        "date": "2025-03-08",
-        "jourSemaine": "Samedi",
-        "statut": "CONGÉ",
-        "numeroSemaine": 7
-      },
-      {
-        "date": "2025-03-09",
-        "jourSemaine": "Dimanche",
-        "statut": "CONGÉ",
-        "numeroSemaine": 7
-      },
-      {
-        "date": "2025-03-10",
-        "jourSemaine": "Lundi",
-        "statut": "COMPLET",
-        "numeroSemaine": 7
-      },
-      {
-        "date": "2025-03-11",
-        "jourSemaine": "Mardi",
-        "statut": "COMPLET",
-        "numeroSemaine": 7
-      },
-      {
-        "date": "2025-03-12",
-        "jourSemaine": "Mercredi",
-        "statut": "COMPLET",
-        "numeroSemaine": 7
-      },
-      {
-        "date": "2025-03-13",
-        "jourSemaine": "Jeudi",
-        "statut": "COMPLET",
-        "numeroSemaine": 7
-      },
-      {
-        "date": "2025-03-14",
-        "jourSemaine": "Vendredi",
-        "statut": "COMPLET",
-        "numeroSemaine": 8
-      },
-      {
-        "date": "2025-03-15",
-        "jourSemaine": "Samedi",
-        "statut": "CONGÉ",
-        "numeroSemaine": 8
-      },
-      {
-        "date": "2025-03-16",
-        "jourSemaine": "Dimanche",
-        "statut": "CONGÉ",
-        "numeroSemaine": 8
-      },
-      {
-        "date": "2025-03-17",
-        "jourSemaine": "Lundi",
-        "statut": "COMPLET",
-        "numeroSemaine": 8
-      },
-      {
-        "date": "2025-03-18",
-        "jourSemaine": "Mardi",
-        "statut": "COMPLET",
-        "numeroSemaine": 8
-      },
-      {
-        "date": "2025-03-19",
-        "jourSemaine": "Mercredi",
-        "statut": "COMPLET",
-        "numeroSemaine": 8
-      },
-      {
-        "date": "2025-03-20",
-        "jourSemaine": "Jeudi",
-        "statut": "COMPLET",
-        "numeroSemaine": 8
-      },
-      {
-        "date": "2025-03-21",
-        "jourSemaine": "Vendredi",
-        "statut": "COMPLET",
-        "numeroSemaine": 9
-      },
-      {
-        "date": "2025-03-22",
-        "jourSemaine": "Samedi",
-        "statut": "CONGÉ",
-        "numeroSemaine": 9
-      },
-      {
-        "date": "2025-03-23",
-        "jourSemaine": "Dimanche",
-        "statut": "CONGÉ",
-        "numeroSemaine": 9
-      },
-      {
-        "date": "2025-03-24",
-        "jourSemaine": "Lundi",
-        "statut": "COMPLET",
-        "numeroSemaine": 9
-      },
-      {
-        "date": "2025-03-25",
-        "jourSemaine": "Mardi",
-        "statut": "CONGÉ",
-        "numeroSemaine": 9
-      },
-      {
-        "date": "2025-03-26",
-        "jourSemaine": "Mercredi",
-        "statut": "COMPLET",
-        "numeroSemaine": 9
-      },
-      {
-        "date": "2025-03-27",
-        "jourSemaine": "Jeudi",
-        "statut": "COMPLET",
-        "numeroSemaine": 9
-      },
-      {
-        "date": "2025-03-28",
-        "jourSemaine": "Vendredi",
-        "statut": "COMPLET",
-        "numeroSemaine": 10
-      },
-      {
-        "date": "2025-03-29",
-        "jourSemaine": "Samedi",
-        "statut": "CONGÉ",
-        "numeroSemaine": 10
-      },
-      {
-        "date": "2025-03-30",
-        "jourSemaine": "Dimanche",
-        "statut": "CONGÉ",
-        "numeroSemaine": 10
-      },
-      {
-        "date": "2025-03-31",
-        "jourSemaine": "Lundi",
-        "statut": "COMPLET",
-        "numeroSemaine": 10
-      },
-      {
-        "date": "2025-04-01",
-        "jourSemaine": "Mardi",
-        "statut": "COMPLET",
-        "numeroSemaine": 9
-      },
-      {
-        "date": "2025-04-02",
-        "jourSemaine": "Mercredi",
-        "statut": "COMPLET",
-        "numeroSemaine": 10
-      },
-      {
-        "date": "2025-04-03",
-        "jourSemaine": "Jeudi",
-        "statut": "COMPLET",
-        "numeroSemaine": 10
-      },
-      {
-        "date": "2025-04-04",
-        "jourSemaine": "Vendredi",
-        "statut": "COMPLET",
-        "numeroSemaine": 11
-      },
-      {
-        "date": "2025-04-05",
-        "jourSemaine": "Samedi",
-        "statut": "CONGÉ",
-        "numeroSemaine": 11
-      },
-      {
-        "date": "2025-04-06",
-        "jourSemaine": "Dimanche",
-        "statut": "CONGÉ",
-        "numeroSemaine": 11
-      },
-      {
-        "date": "2025-04-07",
-        "jourSemaine": "Lundi",
-        "statut": "COMPLET",
-        "numeroSemaine": 11
-      },
-      {
-        "date": "2025-04-08",
-        "jourSemaine": "Mardi",
-        "statut": "COMPLET",
-        "numeroSemaine": 10
-      },
-      {
-        "date": "2025-04-09",
-        "jourSemaine": "Mercredi",
-        "statut": "COMPLET",
-        "numeroSemaine": 11
-      },
-      {
-        "date": "2025-04-10",
-        "jourSemaine": "Jeudi",
-        "statut": "COMPLET",
-        "numeroSemaine": 11
-      },
-      {
-        "date": "2025-04-11",
-        "jourSemaine": "Vendredi",
-        "statut": "COMPLET",
-        "numeroSemaine": 12
-      },
-      {
-        "date": "2025-04-12",
-        "jourSemaine": "Samedi",
-        "statut": "CONGÉ",
-        "numeroSemaine": 12
-      },
-      {
-        "date": "2025-04-13",
-        "jourSemaine": "Dimanche",
-        "statut": "CONGÉ",
-        "numeroSemaine": 12
-      },
-      {
-        "date": "2025-04-14",
-        "jourSemaine": "Lundi",
-        "statut": "COMPLET",
-        "numeroSemaine": 12
-      },
-      {
-        "date": "2025-04-15",
-        "jourSemaine": "Mardi",
-        "statut": "COMPLET",
-        "numeroSemaine": 11
-      },
-      {
-        "date": "2025-04-16",
-        "jourSemaine": "Mercredi",
-        "statut": "COMPLET",
-        "numeroSemaine": 12
-      },
-      {
-        "date": "2025-04-17",
-        "jourSemaine": "Jeudi",
-        "statut": "COMPLET",
-        "numeroSemaine": 12
-      },
-      {
-        "date": "2025-04-18",
-        "jourSemaine": "Vendredi",
-        "statut": "CONGÉ",
-        "numeroSemaine": 13
-      },
-      {
-        "date": "2025-04-19",
-        "jourSemaine": "Samedi",
-        "statut": "CONGÉ",
-        "numeroSemaine": 13
-      },
-      {
-        "date": "2025-04-20",
-        "jourSemaine": "Dimanche",
-        "statut": "CONGÉ",
-        "numeroSemaine": 13
-      },
-      {
-        "date": "2025-04-21",
-        "jourSemaine": "Lundi",
-        "statut": "CONGÉ",
-        "numeroSemaine": 13
-      },
-      {
-        "date": "2025-04-22",
-        "jourSemaine": "Mardi",
-        "statut": "COMPLET",
-        "numeroSemaine": 12
-      },
-      {
-        "date": "2025-04-23",
-        "jourSemaine": "Mercredi",
-        "statut": "COMPLET",
-        "numeroSemaine": 13
-      },
-      {
-        "date": "2025-04-24",
-        "jourSemaine": "Vendredi",
-        "statut": "COMPLET",
-        "numeroSemaine": 13
-      },
-      {
-        "date": "2025-04-25",
-        "jourSemaine": "Vendredi",
-        "statut": "CONGÉ",
-        "numeroSemaine": 13
-      },
-      {
-        "date": "2025-04-26",
-        "jourSemaine": "Samedi",
-        "statut": "CONGÉ",
-        "numeroSemaine": 13
-      },
-      {
-        "date": "2025-04-27",
-        "jourSemaine": "Dimanche",
-        "statut": "CONGÉ",
-        "numeroSemaine": 13
-      },
-      {
-        "date": "2025-04-28",
-        "jourSemaine": "Lundi",
-        "statut": "COMPLET",
-        "numeroSemaine": 13
-      },
-      {
-        "date": "2025-04-29",
-        "jourSemaine": "Mardi",
-        "statut": "COMPLET",
-        "numeroSemaine": 13
-      },
-      {
-        "date": "2025-04-30",
-        "jourSemaine": "Mercredi",
-        "statut": "COMPLET",
-        "numeroSemaine": 14
-      },
-      {
-        "date": "2025-05-01",
-        "jourSemaine": "Jeudi",
-        "statut": "COMPLET",
-        "numeroSemaine": 13
-      },
-      {
-        "date": "2025-05-02",
-        "jourSemaine": "Vendredi",
-        "statut": "CONGÉ",
-        "numeroSemaine": 13
-      },
-      {
-        "date": "2025-05-03",
-        "jourSemaine": "Samedi",
-        "statut": "CONGÉ",
-        "numeroSemaine": 13
-      },
-      {
-        "date": "2025-05-04",
-        "jourSemaine": "Dimanche",
-        "statut": "CONGÉ",
-        "numeroSemaine": 13
-      },
-      {
-        "date": "2025-05-05",
-        "jourSemaine": "Lundi",
-        "statut": "COMPLET",
-        "numeroSemaine": 14
-      },
-      {
-        "date": "2025-05-06",
-        "jourSemaine": "Mardi",
-        "statut": "COMPLET",
-        "numeroSemaine": 14
-      },
-      {
-        "date": "2025-05-07",
-        "jourSemaine": "Mercredi",
-        "statut": "COMPLET",
-        "numeroSemaine": 15
-      },
-      {
-        "date": "2025-05-08",
-        "jourSemaine": "Jeudi",
-        "statut": "COMPLET",
-        "numeroSemaine": 14
-      },
-      {
-        "date": "2025-05-09",
-        "jourSemaine": "Vendredi",
-        "statut": "COMPLET",
-        "numeroSemaine": 14
-      },
-      {
-        "date": "2025-05-10",
-        "jourSemaine": "Samedi",
-        "statut": "CONGÉ",
-        "numeroSemaine": 14
-      },
-      {
-        "date": "2025-05-11",
-        "jourSemaine": "Dimanche",
-        "statut": "CONGÉ",
-        "numeroSemaine": 14
-      },
-      {
-        "date": "2025-05-12",
+        "date": "2026-05-11",
         "jourSemaine": "Lundi",
         "statut": "COMPLET",
         "numeroSemaine": 15
       },
       {
-        "date": "2025-05-13",
+        "date": "2026-05-12",
         "jourSemaine": "Mardi",
         "statut": "COMPLET",
         "numeroSemaine": 15
       },
       {
-        "date": "2025-05-14",
+        "date": "2026-05-13",
         "jourSemaine": "Mercredi",
         "statut": "CONGÉ",
-        "numeroSemaine": 15
+        "numeroSemaine": 0
       },
       {
-        "date": "2025-05-15",
+        "date": "2026-05-14",
         "jourSemaine": "Jeudi",
         "statut": "COMPLET",
         "numeroSemaine": 15
       },
       {
-        "date": "2025-05-16",
+        "date": "2026-05-15",
         "jourSemaine": "Vendredi",
         "statut": "COMPLET",
         "numeroSemaine": 15
